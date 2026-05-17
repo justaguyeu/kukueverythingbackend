@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-kuku-everything-change-in-production-2025')
 DEBUG = config('DEBUG', default=True, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,http://localhost:3000/,*').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -181,3 +181,8 @@ TANZANIA_REGIONS = [
     'Singida', 'Songwe', 'Tabora', 'Tanga', 'Unguja Kaskazini',
     'Unguja Kusini',
 ]
+
+# ── Beem Africa SMS (Tanzania, ~TZS 18/SMS) ───────────────────
+BEEM_API_KEY    = config('BEEM_API_KEY',    default='')
+BEEM_SECRET_KEY = config('BEEM_SECRET_KEY', default='')
+BEEM_SENDER_NAME = config('BEEM_SENDER_NAME', default='KUKU')
