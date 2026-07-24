@@ -121,7 +121,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:3000,http://127.0.0.1:3000'
+    default='http://localhost:3000,http://127.0.0.1:3000,http://localhost:3001'
 ).split(',')
 CORS_ALLOW_CREDENTIALS = True
 
@@ -159,7 +159,7 @@ DEFAULT_FROM_EMAIL = config(
 # Alternative FREE option: Twilio trial gives $15 free credits (~100+ SMS)
 # Set SMS_PROVIDER=twilio in .env and fill TWILIO_* vars below
 #
-SMS_PROVIDER = config('SMS_PROVIDER', default='africastalking')  # 'africastalking' | 'twilio' | 'console'
+SMS_PROVIDER = config('SMS_PROVIDER', default='twilio')  # 'africastalking' | 'twilio' | 'console'
 
 # Africa's Talking
 AFRICASTALKING_USERNAME  = config('AFRICASTALKING_USERNAME', default='sandbox')
