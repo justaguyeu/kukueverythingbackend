@@ -160,7 +160,7 @@ DEFAULT_FROM_EMAIL = config(
 # Alternative FREE option: Twilio trial gives $15 free credits (~100+ SMS)
 # Set SMS_PROVIDER=twilio in .env and fill TWILIO_* vars below
 #
-SMS_PROVIDER = config('SMS_PROVIDER', default='twilio')  # 'africastalking' | 'twilio' | 'console'
+SMS_PROVIDER = config('SMS_PROVIDER', default='beem')  # 'africastalking' | 'twilio' | 'console'
 
 # Africa's Talking
 AFRICASTALKING_USERNAME  = config('AFRICASTALKING_USERNAME', default='sandbox')
