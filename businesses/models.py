@@ -17,6 +17,7 @@ REGION_CHOICES = [(r, r) for r in REGION_LIST]
 PRODUCT_CHOICES = [
     ('kuku_kienyeji_live', 'Kuku wa Kienyeji (Live)'),
     ('kuku_kisasa_live',   'Kuku wa Kisasa (Live)'),
+    ('vifaranga', 'Vifaranga'),
     ('nyama_kienyeji',     'Nyama ya Kuku Kienyeji'),
     ('nyama_kisasa',       'Nyama ya Kuku Kisasa'),
     ('mayai_kienyeji',     'Mayai ya Kienyeji'),
